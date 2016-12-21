@@ -11,6 +11,9 @@ public class Flight {
   private Crew crew;
   private Map<Seat, Passenger> passengers;
 
+  public Flight(String number){
+    this.number = number;
+  }
   public void setNumber(String number){
     this.number = number;
   }
@@ -54,7 +57,7 @@ public class Flight {
     return this.crew;
   }
 
-  public void setPassangers{
+  public void setPassangers(Map<Seat, Passenger> passengers){
     this.passengers = passengers;
   }
 

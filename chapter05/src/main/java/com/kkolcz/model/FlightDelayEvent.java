@@ -6,19 +6,24 @@ public class FlightDelayEvent {
   private Flight flight;
   private Date estimatedDeparture;
 
-  public setFlight(Flight flight){
+  public FlightDelayEvent( Flight flight,Date estimatedDeparture){
+    this.flight = flight;
+    this.estimatedDeparture = estimatedDeparture;
+  } 
+
+  public void setFlight(Flight flight){
     this.flight = flight;
   }
 
-  public getFlight(){
+  public Flight getFlight(){
     return this.flight;
   }
 
-  public setEstimatedDeparture(Date estimatedDeparture){
+  public void setEstimatedDeparture(Date estimatedDeparture){
     this.estimatedDeparture = estimatedDeparture;
   }
 
-  public getEstimatedDeparture(){
+  public Date getEstimatedDeparture(){
     return this.estimatedDeparture;
   }
 }

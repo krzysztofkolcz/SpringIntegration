@@ -1,4 +1,4 @@
-package com.kkolcz;
+package com.kkolcz.model;
 
 import java.util.Date;
 public class StubFlightScheduler implements FlightScheduler {
